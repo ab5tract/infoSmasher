@@ -1,0 +1,215 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../usr/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 20, ../../../../../usr/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+}
+
+/* line 22, ../../../../../usr/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 24, ../../../../../usr/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 26, ../../../../../usr/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 28, ../../../../../usr/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 101, ../../../../../usr/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 30, ../../../../../usr/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 114, ../../../../../usr/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: "VT323";
+  src: url(/gogbot/fonts/VT323.ttf) format('truetype');
+}
+
+/*
+@include font-face("", font-files("/gogbot/fonts/", truetype));
+@include font-face("", font-files("/gogbot/fonts/", opentype));
+*/
+@font-face {
+  font-family: "NotCourier";
+  src: url(/gogbot/fonts/NotCourierSans.otf) format('opentype');
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url(/gogbot/fonts/Lato-Black.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: "Lato-Italic";
+  src: url(/gogbot/fonts/Lato-HairlineItalic.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: "UniversElse";
+  src: url(/gogbot/fonts/UniversElse-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: "Black_Ops_One";
+  src: url(/gogbot/fonts/Black_Ops_One/BlackOpsOne.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: "Aldrich";
+  src: url(/gogbot/fonts/Aldrich/Aldrich-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: "Changa_One";
+  src: url(/gogbot/fonts/Changa_One/ChangaOne-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: "Antic";
+  src: url(/gogbot/fonts/Antic/Antic-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: "Delius_Swash_Caps";
+  src: url(/gogbot/fonts/Delius_Swash_Caps/DeliusSwashCaps-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: "Julee";
+  src: url(/gogbot/fonts/Julee/Julee-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: "Kelly";
+  src: url(/gogbot/fonts/Kelly_Slab/KellySlab-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: "Love_Ya_Like_A_Sister";
+  src: url(/gogbot/fonts/Love_Ya_Like_A_Sister/LoveYaLikeASister.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: "Merienda_One";
+  src: url(/gogbot/fonts/Merienda_One/MeriendaOne-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: "Monoton";
+  src: url(/gogbot/fonts/Monoton/Monoton-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: "Numans";
+  src: url(/gogbot/fonts/Numans/Numans-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: "Passero_One";
+  src: url(/gogbot/fonts/Passero_One/PasseroOne-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: "Podkova";
+  src: url(/gogbot/fonts/Podkova/Podkova-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: "Rationale";
+  src: url(/gogbot/fonts/Rationale/Rationale-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: "Short_Stack";
+  src: url(/gogbot/fonts/Short_Stack/ShortStack-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: "UnifrakturCook";
+  src: url(/gogbot/fonts/UnifrakturCook/UnifrakturCook-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: "Voltaire";
+  src: url(/gogbot/fonts/Voltaire/Voltaire-Regular.ttf) format('truetype');
+}
+
+/* line 44, ../sass/screen.scss */
+h1.process {
+  font-size: 186px;
+  margin-left: 72px;
+  padding-top: 128px;
+}
+
+/* line 53, ../sass/screen.scss */
+#full {
+  min-height: 100%;
+  min-width: 100%;
+}
+
+/* line 58, ../sass/screen.scss */
+.bgcolor1 {
+  background-color: #74ff00;
+}
+
+/* line 62, ../sass/screen.scss */
+.fcolor1 {
+  color: #74ff00;
+}
+
+/* line 66, ../sass/screen.scss */
+.bgcolor2 {
+  color: #00ff8d;
+}
+
+/* line 70, ../sass/screen.scss */
+.fcolor2 {
+  color: #00ff8d;
+}
