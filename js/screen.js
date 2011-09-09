@@ -4,6 +4,15 @@ $('document').ready( function(){
 	var fonts = [ 'NotCourier', 'VT323', 'Lato', 'Lato-Italic', 'UniversElse', 'Black_Ops_One', 'Aldrich', 'Changa_One', 'Antic', 'Delius_Swash_Caps', 'Julee', 'Kelly', 'Love_Ya_Like_A_Sister', 'Merienda_One', 'Monoton', 'Passero_One', 'Numans', 'Podkova', 'Rationale', 'Short_Stack', 'UnifrakturCook', 'Voltaire'  ];
 
 
+	var title = $('.process').html();
+	var overtitle = title.split('');
+
+	$.each(overtitle, function(i, ch){
+		overtitle.splice(i,1,'<span>' + ch + '</span>');
+	});	
+
+	$('h1.process').replaceWith('<h1 class="process">' + overtitle.join('').toString() + '</h1>');
+
 	setInterval(function(){
 
 		var rand1 = Math.floor(Math.random() * colors.length);
@@ -15,7 +24,13 @@ $('document').ready( function(){
 		$('.process').css({
 //				'background-color' : colors[rand1], 
 				'color' : colors[rand2], 
-				'font-family' : fonts[rand3] 
+//				'font-family' : fonts[rand3] 
 		});
+
+		$('span').each(function(){
+			$(this).css('font-family', fonts[rand3]);
+			rand3 = Math.floor(Math.random() * fonts.length);
+		});
+
 	}, 250);
 });
