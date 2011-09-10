@@ -2,10 +2,15 @@ require 'rubygems'
 require 'json'
 require 'sinatra'
 
-mem = File.join(File.dirname(__FILE__), "data.json")
+set :root, File.dirname(__FILE__)
+set :static, true
+set :public, 'public'
+
+mem = File.join(File.dirname(__FILE__), settings.public, "data.json")
+
 
 get '/' do
-  send_file("index.html")
+  send_file(File.join(settings.public, "index.html"))
 end
 
 get '/data.json' do
