@@ -1,0 +1,71 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/css3/font-face";
+
+@include font-face("VT323", font-files("/gogbot/fonts/VT323.ttf", truetype));
+/*
+@include font-face("", font-files("/gogbot/fonts/", truetype));
+@include font-face("", font-files("/gogbot/fonts/", opentype));
+*/
+@include font-face("NotCourier", font-files("/gogbot/fonts/NotCourierSans.otf", opentype));
+@include font-face("Lato", font-files("/gogbot/fonts/Lato-Black.ttf", truetype));
+@include font-face("Lato-Italic", font-files("/gogbot/fonts/Lato-HairlineItalic.ttf", truetype));
+@include font-face("UniversElse", font-files("/gogbot/fonts/UniversElse-Regular.ttf", truetype));
+@include font-face("Black_Ops_One", font-files("/gogbot/fonts/Black_Ops_One/BlackOpsOne.ttf", truetype));
+@include font-face("Aldrich", font-files("/gogbot/fonts/Aldrich/Aldrich-Regular.ttf", truetype));
+@include font-face("Changa_One", font-files("/gogbot/fonts/Changa_One/ChangaOne-Regular.ttf", truetype));
+@include font-face("Antic", font-files("/gogbot/fonts/Antic/Antic-Regular.ttf", truetype));
+@include font-face("Delius_Swash_Caps", font-files("/gogbot/fonts/Delius_Swash_Caps/DeliusSwashCaps-Regular.ttf", truetype));
+@include font-face("Julee", font-files("/gogbot/fonts/Julee/Julee-Regular.ttf", truetype));
+@include font-face("Kelly", font-files("/gogbot/fonts/Kelly_Slab/KellySlab-Regular.ttf", truetype));
+@include font-face("Love_Ya_Like_A_Sister", font-files("/gogbot/fonts/Love_Ya_Like_A_Sister/LoveYaLikeASister.ttf", truetype));
+@include font-face("Merienda_One", font-files("/gogbot/fonts/Merienda_One/MeriendaOne-Regular.ttf", truetype));
+//@include font-face("", font-files("/gogbot/fonts/", truetype));
+@include font-face("Monoton", font-files("/gogbot/fonts/Monoton/Monoton-Regular.ttf", truetype));
+@include font-face("Numans", font-files("/gogbot/fonts/Numans/Numans-Regular.ttf", truetype));
+@include font-face("Passero_One", font-files("/gogbot/fonts/Passero_One/PasseroOne-Regular.ttf", truetype));
+@include font-face("Podkova", font-files("/gogbot/fonts/Podkova/Podkova-Regular.ttf", truetype));
+@include font-face("Rationale", font-files("/gogbot/fonts/Rationale/Rationale-Regular.ttf", truetype));
+@include font-face("Short_Stack", font-files("/gogbot/fonts/Short_Stack/ShortStack-Regular.ttf", truetype));
+@include font-face("UnifrakturCook", font-files("/gogbot/fonts/UnifrakturCook/UnifrakturCook-Bold.ttf", truetype));
+@include font-face("Voltaire", font-files("/gogbot/fonts/Voltaire/Voltaire-Regular.ttf", truetype));
+
+
+// Colors of all kinds
+$birds: #74FF00;
+$waterInVain: #00FF8D;
+
+
+
+h1.process {
+//	font-family: "VT323";
+	font-size: 272px;
+//	background-color: $birds;
+	margin-left: 96px;
+}
+
+
+#full {
+	min-height: 100%;
+	min-width: 100%;
+}
+
+.bgcolor1 {
+	background-color: $birds;
+}
+
+.fcolor1 {
+	color: $birds;
+}
+
+.bgcolor2 {
+	color: $waterInVain;
+}
+
+.fcolor2 {
+	color: $waterInVain;
+}
